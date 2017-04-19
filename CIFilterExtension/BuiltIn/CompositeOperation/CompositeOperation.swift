@@ -1,0 +1,23 @@
+/*
+ CIColorBlendMode
+ CIColorBurnBlendMode
+ CIColorDodgeBlendMode
+ CIDarkenBlendMode
+ CIExclusionBlendMode
+ CIHardLightBlendMode
+ CIHueBlendMode
+ CILightenBlendMode
+ CILinearBurnBlendMode
+ CILinearDodgeBlendMode
+ CILuminosityBlendMode
+ CIMaximumCompositing
+ CIMinimumCompositing
+ CIMultiplyBlendMode
+ CIMultiplyCompositing
+ CIPinLightBlendMode
+ CISaturationBlendMode
+ CISoftLightBlendMode
+ CISourceAtopCompositing
+ CISourceInCompositing
+ CISourceOutCompositing
+ */

@@ -1,0 +1,13 @@
+/*
+ CIAccordionFoldTransition
+ CIBarsSwipeTransition
+ CICopyMachineTransition
+ CIDisintegrateWithMaskTransition
+ CIDissolveTransition
+ CIFlashTransition
+ CIModTransition
+ CIPageCurlTransition
+ CIPageCurlWithShadowTransition
+ CIRippleTransition
+ CISwipeTransition
+ */

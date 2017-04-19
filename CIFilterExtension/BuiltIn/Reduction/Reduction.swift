@@ -1,0 +1,11 @@
+/*
+ CIAreaAverage
+ CIAreaHistogram
+ CIRowAverage
+ CIColumnAverage
+ CIHistogramDisplayFilter
+ CIAreaMaximum
+ CIAreaMinimum
+ CIAreaMaximumAlpha
+ CIAreaMinimumAlpha
+ */

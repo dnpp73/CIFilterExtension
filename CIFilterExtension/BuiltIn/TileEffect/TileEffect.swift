@@ -1,0 +1,17 @@
+/*
+ CIAffineTile
+ CIEightfoldReflectedTile
+ CIFourfoldReflectedTile
+ CIFourfoldRotatedTile
+ CIFourfoldTranslatedTile
+ CIGlideReflectedTile
+ CIKaleidoscope
+ CIOpTile
+ CIParallelogramTile
+ CIPerspectiveTile
+ CISixfoldReflectedTile
+ CISixfoldRotatedTile
+ CITriangleKaleidoscope
+ CITriangleTile
+ CITwelvefoldReflectedTile
+ */
