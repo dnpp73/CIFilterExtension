@@ -26,7 +26,7 @@ public struct TiltShiftCircle {
             let c = center ?? XYPosition(x: rect.midX, y: rect.midY)
             let r0: CGFloat = radius0 ?? 5.0
             let r1: CGFloat = radius1 ?? min(rect.width, rect.height) - 5.0
-            guard let gradient = RadialGradient.image(inputCenter: c, inputRadius0: r0, inputRadius1: r1, inputColor0: colorOpaque, inputColor1: colorTransparent)?.cropping(to: rect) else {
+            guard let gradient = RadialGradient.image(inputCenter: c, inputRadius0: r0, inputRadius1: r1, inputColor0: colorOpaque, inputColor1: colorTransparent)?.cropped(to: rect) else {
                 return nil
             }
             

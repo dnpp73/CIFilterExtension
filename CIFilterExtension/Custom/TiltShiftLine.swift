@@ -21,7 +21,7 @@ public struct TiltShiftLine {
             let topRect = rect.applying(CGAffineTransform(scaleX: 1.0, y: 0.5)).applying(CGAffineTransform(translationX: 0.0, y: rect.height / 2.0))
             let topPoint0 = XYPosition(x: rect.midX, y: rect.maxY)
             let topPoint1 = XYPosition(x: rect.midX, y: rect.maxY - 200.0)
-            guard let gradientTop = LinearGradient.image(inputPoint0: topPoint0, inputPoint1: topPoint1, inputColor0: colorTransparent, inputColor1: colorOpaque)?.cropping(to: topRect) else {
+            guard let gradientTop = LinearGradient.image(inputPoint0: topPoint0, inputPoint1: topPoint1, inputColor0: colorTransparent, inputColor1: colorOpaque)?.cropped(to: topRect) else {
                 return nil
             }
             // return gradientTop.cropping(to: rect)
@@ -30,12 +30,12 @@ public struct TiltShiftLine {
             let bottomRect = rect.applying(CGAffineTransform(scaleX: 1.0, y: 0.501)) // なんとなく被せておきたい
             let bottomPoint0 = XYPosition(x: rect.midX, y: rect.minY)
             let bottomPoint1 = XYPosition(x: rect.midX, y: rect.minY + 200.0)
-            guard let gradientBottom = LinearGradient.image(inputPoint0: bottomPoint0, inputPoint1: bottomPoint1, inputColor0: colorTransparent, inputColor1: colorOpaque)?.cropping(to: bottomRect) else {
+            guard let gradientBottom = LinearGradient.image(inputPoint0: bottomPoint0, inputPoint1: bottomPoint1, inputColor0: colorTransparent, inputColor1: colorOpaque)?.cropped(to: bottomRect) else {
                 return nil
             }
             // return gradientBottom.cropping(to: rect)
             
-            guard let gradient = SourceOverCompositing.filter(inputBackgroundImage: gradientTop)(gradientBottom)?.cropping(to: rect) else {
+            guard let gradient = SourceOverCompositing.filter(inputBackgroundImage: gradientTop)(gradientBottom)?.cropped(to: rect) else {
                 return nil
             }
             // return gradient

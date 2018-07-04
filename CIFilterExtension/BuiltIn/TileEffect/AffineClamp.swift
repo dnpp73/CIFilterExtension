@@ -26,7 +26,7 @@ public struct AffineClamp {
             guard let filteredImage = filter(clampedImage) else {
                 return nil
             }
-            return filteredImage.cropping(to: image.extent)
+            return filteredImage.cropped(to: image.extent)
         }
     }
     

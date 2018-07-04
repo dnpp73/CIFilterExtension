@@ -27,7 +27,7 @@ internal func noParamsFilter(name: String) -> Filter {
         let parameters = [
             kCIInputImageKey: image
         ]
-        let filter = CIFilter(name:name, withInputParameters:parameters)
+        let filter = CIFilter(name:name, withInputParameters: parameters)
         return filter?.outputImage
     }
 }

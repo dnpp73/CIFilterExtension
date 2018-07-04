@@ -12,7 +12,7 @@ Inspired by [`jefflovejapan/CIFilterKit`](https://github.com/jefflovejapan/CIFil
 
 ## What is this
 
-`CIFilter` についてドキュメントを読みながら調査してたら [`jefflovejapan/CIFilterKit`](https://github.com/jefflovejapan/CIFilterKit) を見付けたのだけど、更新が止まっており Swift 3.0 ではなかったので、参考にしつつ試しに自分で一つ書いてみたのだけど、最終的に手作業でチマチマ増やしてたらこんなことになってしまった。
+`CIFilter` についてドキュメントを読みながら調査してたら [`jefflovejapan/CIFilterKit`](https://github.com/jefflovejapan/CIFilterKit) を見付けたのだけど、更新が止まっていたので、参考にしつつ試しに自分で一つ書いてみたのだけど、最終的に手作業でチマチマ増やしてたらこんなことになってしまった。
 
 `CIFilter` 自体はカーネルをまとめてフィルタグラフを形成するにとどまり、可能な限りイメージの遅延評価を試みる。画像処理に於いて重い処理は概ねコンボリューション周りであって、それに比べフィルタグラフ自体は富豪的に都度生成しても実用上問題にならないし、たぶん `CIFilter` のインターフェースから察するに内部でキャッシュが走りやすい構造になっているのでこういう形に実装した。
 
