@@ -3,9 +3,9 @@ import CoreImage
 
 @available(iOS 7, OSX 10.9, *)
 public struct ColorPolynomial {
-    
+
     public static let defaultCoefficients = PolynomialCoefficients(a0: 0.0, a1: 1.0, a2: 0.0, a3: 0.0)
-    
+
     public static func filter(inputRedCoefficients: PolynomialCoefficients = defaultCoefficients,
                               inputGreenCoefficients: PolynomialCoefficients = defaultCoefficients,
                               inputBlueCoefficients: PolynomialCoefficients = defaultCoefficients,
@@ -22,5 +22,5 @@ public struct ColorPolynomial {
             return filter?.outputImage
         }
     }
-    
+
 }

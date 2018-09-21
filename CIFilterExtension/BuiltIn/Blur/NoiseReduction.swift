@@ -3,10 +3,10 @@ import CoreImage
 
 @available(iOS 9, OSX 10.4, *)
 public struct NoiseReduction {
-    
+
     public static let defaultInputNoiseLevel: CGFloat = 0.02
     public static let defaultInputSharpness: CGFloat = 0.4
-    
+
     public static func filter(inputNoiseLevel: CGFloat = defaultInputNoiseLevel,
                               inputSharpness: CGFloat = defaultInputSharpness) -> Filter {
         return { image in
@@ -19,5 +19,5 @@ public struct NoiseReduction {
             return filter?.outputImage
         }
     }
-    
+
 }

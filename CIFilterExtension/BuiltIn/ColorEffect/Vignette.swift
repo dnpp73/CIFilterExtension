@@ -3,10 +3,10 @@ import CoreImage
 
 @available(iOS 5, OSX 10.9, *)
 public struct Vignette {
-    
+
     public static let defaultInputRadius: CGFloat = 1.0
     public static let defaultInputIntensity: CGFloat = 0.0
-    
+
     public static func filter(inputRadius: CGFloat = defaultInputRadius,
                               inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
         return { image in
@@ -19,5 +19,5 @@ public struct Vignette {
             return filter?.outputImage
         }
     }
-    
+
 }

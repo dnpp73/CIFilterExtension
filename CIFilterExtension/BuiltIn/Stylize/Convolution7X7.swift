@@ -3,9 +3,9 @@ import CoreImage
 
 @available(iOS 9, OSX 10.9, *)
 public struct Convolution7X7 {
-    
+
     // TODO: 動作確認
-    
+
     public static let defaultInputWeights = ConvolutionMatrix7X7(w00: 0.0, w01: 0.0, w02: 0.0, w03: 0.0, w04: 0.0, w05: 0.0, w06: 0.0,
                                                                  w10: 0.0, w11: 0.0, w12: 0.0, w13: 0.0, w14: 0.0, w15: 0.0, w16: 0.0,
                                                                  w20: 0.0, w21: 0.0, w22: 0.0, w23: 0.0, w24: 0.0, w25: 0.0, w26: 0.0,
@@ -14,7 +14,7 @@ public struct Convolution7X7 {
                                                                  w50: 0.0, w51: 0.0, w52: 0.0, w53: 0.0, w54: 0.0, w55: 0.0, w56: 0.0,
                                                                  w60: 0.0, w61: 0.0, w62: 0.0, w63: 0.0, w64: 0.0, w65: 0.0, w66: 0.0)
     public static let defaultInputBias: CGFloat = 0.0
-    
+
     public static func filter(inputWeights: ConvolutionMatrix7X7 = defaultInputWeights, inputBias: CGFloat = defaultInputBias) -> Filter {
         return { image in
             let parameters: Parameters = [
@@ -26,5 +26,5 @@ public struct Convolution7X7 {
             return filter?.outputImage
         }
     }
-    
+
 }

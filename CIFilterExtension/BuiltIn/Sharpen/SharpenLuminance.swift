@@ -3,9 +3,9 @@ import CoreImage
 
 @available(iOS 6, OSX 10.4, *)
 public struct SharpenLuminance {
-    
+
     public static let defaultInputSharpness: CGFloat = 0.4
-    
+
     public static func filter(inputSharpness: CGFloat = defaultInputSharpness) -> Filter {
         return { image in
             let parameters: Parameters = [
@@ -16,5 +16,5 @@ public struct SharpenLuminance {
             return filter?.outputImage
         }
     }
-    
+
 }

@@ -9,7 +9,7 @@ public struct ColorCube {
             var parameters: Parameters = [
                 kCIInputImageKey: image
             ]
-            
+
             var inputCubeDimension: Int?
             var inputCubeData: NSData?
             if countIsCube(dividend: inputCube.count) {
@@ -19,15 +19,15 @@ public struct ColorCube {
                 let length = vectorArray.count * MemoryLayout<Float>.size
                 inputCubeData = NSData(bytes: vectorArray, length: length)
             }
-            
+
             if let inputCubeData = inputCubeData, let inputCubeDimension = inputCubeDimension {
                 parameters["inputCubeData"] = inputCubeData
                 parameters["inputCubeDimension"] = inputCubeDimension
             }
-            
+
             let filter = CIFilter(name: "CIColorCube", parameters: parameters)
             return filter?.outputImage
         }
     }
-    
+
 }

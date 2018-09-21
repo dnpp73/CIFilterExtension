@@ -3,9 +3,9 @@ import CoreImage
 
 @available(iOS 5, OSX 10.4, *)
 public struct HueAdjust {
-    
+
     public static let defaultInputAngle: CGFloat = 0.0
-    
+
     public static func filter(inputAngle: CGFloat = defaultInputAngle) -> Filter {
         return { image in
             let parameters: Parameters = [
@@ -16,5 +16,5 @@ public struct HueAdjust {
             return filter?.outputImage
         }
     }
-    
+
 }

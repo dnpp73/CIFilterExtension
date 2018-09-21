@@ -3,9 +3,9 @@ import CoreImage
 
 @available(iOS 9, OSX 10.4, *)
 public struct Edges {
-    
+
     public static let defaultInputIntensity: CGFloat = 1.0
-    
+
     public static func filter(inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
         return { image in
             let parameters: Parameters = [
@@ -16,5 +16,5 @@ public struct Edges {
             return filter?.outputImage
         }
     }
-    
+
 }

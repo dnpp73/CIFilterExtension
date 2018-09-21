@@ -14,9 +14,9 @@ public struct AffineClamp {
             return filter?.outputImage
         }
     }
-    
+
     // MARK:- Util
-    
+
     internal static func clampAndCrop(_ filter: @escaping Filter) -> Filter {
         return { image in
             let clamp = AffineClamp.filter(inputTransform: .identity)
@@ -29,5 +29,5 @@ public struct AffineClamp {
             return filteredImage.cropped(to: image.extent)
         }
     }
-    
+
 }
