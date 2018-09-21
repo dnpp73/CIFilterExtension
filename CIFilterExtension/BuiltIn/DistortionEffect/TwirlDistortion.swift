@@ -18,7 +18,7 @@ public struct TwirlDistortion {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputAngleKey: inputAngle
             ]
-            let filter = CIFilter(name: "CITwirlDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CITwirlDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

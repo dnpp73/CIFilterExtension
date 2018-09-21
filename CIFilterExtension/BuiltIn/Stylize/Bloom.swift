@@ -15,7 +15,7 @@ public struct Bloom {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputIntensityKey: inputIntensity
             ]
-            let filter = CIFilter(name: "CIBloom", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIBloom", parameters: parameters)
             return filter?.outputImage
         }
     }

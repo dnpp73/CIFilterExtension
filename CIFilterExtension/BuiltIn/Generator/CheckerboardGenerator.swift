@@ -22,7 +22,7 @@ public struct CheckerboardGenerator {
             kCIInputWidthKey: inputWidth,
             kCIInputSharpnessKey: inputSharpness
         ]
-        return CIFilter(name: "CICheckerboardGenerator", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CICheckerboardGenerator", parameters: parameters)?.outputImage
     }
     
 }

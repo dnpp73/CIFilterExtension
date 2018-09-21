@@ -18,7 +18,7 @@ public struct ColorPolynomial {
                 "inputBlueCoefficients": inputBlueCoefficients.vector,
                 "inputAlphaCoefficients": inputAlphaCoefficients.vector
             ]
-            let filter = CIFilter(name: "CIColorPolynomial", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorPolynomial", parameters: parameters)
             return filter?.outputImage
         }
     }

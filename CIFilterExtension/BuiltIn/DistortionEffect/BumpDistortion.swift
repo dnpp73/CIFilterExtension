@@ -18,7 +18,7 @@ public struct BumpDistortion {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputScaleKey: inputScale
             ]
-            let filter = CIFilter(name: "CIBumpDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIBumpDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

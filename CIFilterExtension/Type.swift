@@ -27,7 +27,7 @@ internal func noParamsFilter(name: String) -> Filter {
         let parameters = [
             kCIInputImageKey: image
         ]
-        let filter = CIFilter(name:name, withInputParameters: parameters)
+        let filter = CIFilter(name:name, parameters: parameters)
         return filter?.outputImage
     }
 }
@@ -39,7 +39,7 @@ internal func composer(name: String) -> ImageComposer {
                 kCIInputImageKey: image,
                 "inputBackgroundImage": bgImage
             ]
-            let filter = CIFilter(name: name, withInputParameters: parameters)
+            let filter = CIFilter(name: name, parameters: parameters)
             return filter?.outputImage
         }
     }

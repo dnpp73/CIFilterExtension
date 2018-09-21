@@ -22,7 +22,7 @@ public struct RadialGradient {
             "inputColor0": inputColor0,
             "inputColor1": inputColor1
         ]
-        return CIFilter(name: "CIRadialGradient", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CIRadialGradient", parameters: parameters)?.outputImage
     }
     
 }

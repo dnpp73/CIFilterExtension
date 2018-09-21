@@ -10,7 +10,7 @@ public struct AffineClamp {
                 kCIInputImageKey: image,
                 kCIInputTransformKey: inputTransform
             ]
-            let filter = CIFilter(name: "CIAffineClamp", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIAffineClamp", parameters: parameters)
             return filter?.outputImage
         }
     }

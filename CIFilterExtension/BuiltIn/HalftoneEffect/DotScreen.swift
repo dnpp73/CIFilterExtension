@@ -21,7 +21,7 @@ public struct DotScreen {
                 kCIInputWidthKey: inputWidth,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CIDotScreen", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIDotScreen", parameters: parameters)
             return filter?.outputImage
         }
     }

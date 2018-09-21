@@ -12,7 +12,7 @@ public struct SharpenLuminance {
                 kCIInputImageKey: image,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CISharpenLuminance", withInputParameters: parameters)
+            let filter = CIFilter(name: "CISharpenLuminance", parameters: parameters)
             return filter?.outputImage
         }
     }

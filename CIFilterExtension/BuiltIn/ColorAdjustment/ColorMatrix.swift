@@ -25,7 +25,7 @@ public struct ColorMatrix {
                 "inputBiasVector": inputBiasVector.vector
             ]
             
-            let filter = CIFilter(name: "CIColorMatrix", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorMatrix", parameters: parameters)
             return filter?.outputImage
         }
     }

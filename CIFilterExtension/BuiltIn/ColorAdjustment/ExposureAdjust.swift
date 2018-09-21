@@ -12,7 +12,7 @@ public struct ExposureAdjust {
                 kCIInputImageKey: image,
                 kCIInputEVKey: inputEV
             ]
-            let filter = CIFilter(name: "CIExposureAdjust", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIExposureAdjust", parameters: parameters)
             return filter?.outputImage
         }
     }

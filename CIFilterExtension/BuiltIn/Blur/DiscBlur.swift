@@ -12,7 +12,7 @@ public struct DiscBlur {
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIDiscBlur", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIDiscBlur", parameters: parameters)
             return filter?.outputImage
         }
     }

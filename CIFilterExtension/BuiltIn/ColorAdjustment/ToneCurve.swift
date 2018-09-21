@@ -23,7 +23,7 @@ public struct ToneCurve {
                 "inputPoint3": inputPoint3.vector,
                 "inputPoint4": inputPoint4.vector
             ]
-            let filter = CIFilter(name: "CIToneCurve", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIToneCurve", parameters: parameters)
             return filter?.outputImage
         }
     }

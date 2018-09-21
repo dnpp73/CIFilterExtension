@@ -19,7 +19,7 @@ public struct LinearGradient {
             "inputColor0": inputColor0,
             "inputColor1": inputColor1
         ]
-        return CIFilter(name: "CILinearGradient", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CILinearGradient", parameters: parameters)?.outputImage
     }
     
 }

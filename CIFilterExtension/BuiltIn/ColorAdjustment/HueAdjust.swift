@@ -12,7 +12,7 @@ public struct HueAdjust {
                 kCIInputImageKey: image,
                 kCIInputAngleKey: inputAngle
             ]
-            let filter = CIFilter(name: "CIHueAdjust", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIHueAdjust", parameters: parameters)
             return filter?.outputImage
         }
     }

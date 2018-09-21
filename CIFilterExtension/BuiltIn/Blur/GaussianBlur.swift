@@ -12,7 +12,7 @@ public struct GaussianBlur {
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIGaussianBlur", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIGaussianBlur", parameters: parameters)
             return filter?.outputImage
         }
     }

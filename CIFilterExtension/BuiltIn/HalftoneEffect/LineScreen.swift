@@ -21,7 +21,7 @@ public struct LineScreen {
                 kCIInputWidthKey: inputWidth,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CILineScreen", withInputParameters: parameters)
+            let filter = CIFilter(name: "CILineScreen", parameters: parameters)
             return filter?.outputImage
         }
     }

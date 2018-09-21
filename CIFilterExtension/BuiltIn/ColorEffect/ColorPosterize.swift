@@ -14,7 +14,7 @@ public struct ColorPosterize {
             if let levels = inputLevels {
                 parameters["inputLevels"] = levels
             }
-            let filter = CIFilter(name: "CIColorPosterize", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorPosterize", parameters: parameters)
             return filter?.outputImage
         }
     }

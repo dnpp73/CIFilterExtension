@@ -10,7 +10,7 @@ public struct ColorMap {
                 kCIInputImageKey: image,
                 "inputGradientImage": inputGradientImage
             ]
-            let filter = CIFilter(name: "CIColorMap", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorMap", parameters: parameters)
             return filter?.outputImage
         }
     }

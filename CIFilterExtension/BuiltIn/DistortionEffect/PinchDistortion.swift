@@ -18,7 +18,7 @@ public struct PinchDistortion {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputScaleKey: inputScale
             ]
-            let filter = CIFilter(name: "CIPinchDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIPinchDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

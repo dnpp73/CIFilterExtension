@@ -12,7 +12,7 @@ public struct Edges {
                 kCIInputImageKey: image,
                 kCIInputIntensityKey: inputIntensity
             ]
-            let filter = CIFilter(name: "CIEdges", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIEdges", parameters: parameters)
             return filter?.outputImage
         }
     }

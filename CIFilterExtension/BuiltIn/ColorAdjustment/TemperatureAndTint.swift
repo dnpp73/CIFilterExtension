@@ -15,7 +15,7 @@ public struct TemperatureAndTint {
                 "inputNeutral": inputNeutral.vector,
                 "inputTargetNeutral": targetInputNeutral.vector
             ]
-            let filter = CIFilter(name: "CITemperatureAndTint", withInputParameters: parameters)
+            let filter = CIFilter(name: "CITemperatureAndTint", parameters: parameters)
             return filter?.outputImage
         }
     }

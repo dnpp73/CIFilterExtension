@@ -15,7 +15,7 @@ public struct NoiseReduction {
                 "inputNoiseLevel": inputNoiseLevel,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CINoiseReduction", withInputParameters: parameters)
+            let filter = CIFilter(name: "CINoiseReduction", parameters: parameters)
             return filter?.outputImage
         }
     }

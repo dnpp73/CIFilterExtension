@@ -15,7 +15,7 @@ public struct Gloom {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputIntensityKey: inputIntensity
             ]
-            let filter = CIFilter(name: "CIGloom", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIGloom", parameters: parameters)
             return filter?.outputImage
         }
     }

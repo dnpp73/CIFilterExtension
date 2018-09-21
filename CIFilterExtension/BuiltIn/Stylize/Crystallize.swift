@@ -15,7 +15,7 @@ public struct Crystallize {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputCenterKey: inputCenter.vector
             ]
-            let filter = CIFilter(name: "CICrystallize", withInputParameters: parameters)
+            let filter = CIFilter(name: "CICrystallize", parameters: parameters)
             return filter?.outputImage
         }
     }

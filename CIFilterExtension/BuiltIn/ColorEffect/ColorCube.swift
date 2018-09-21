@@ -25,7 +25,7 @@ public struct ColorCube {
                 parameters["inputCubeDimension"] = inputCubeDimension
             }
             
-            let filter = CIFilter(name: "CIColorCube", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorCube", parameters: parameters)
             return filter?.outputImage
         }
     }

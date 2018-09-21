@@ -15,7 +15,7 @@ public struct ColorMonochrome {
                 kCIInputColorKey: inputColor,
                 kCIInputIntensityKey: inputIntensity
             ]
-            let filter = CIFilter(name: "CIColorMonochrome", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorMonochrome", parameters: parameters)
             return filter?.outputImage
         }
     }

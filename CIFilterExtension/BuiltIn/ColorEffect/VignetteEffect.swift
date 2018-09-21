@@ -25,7 +25,7 @@ public struct VignetteEffect {
                 // kCIInputRadiusKey: inputRadius,
                 "inputFalloff": inputFalloff
             ]
-            let filter = CIFilter(name: "CIVignetteEffect", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIVignetteEffect", parameters: parameters)
             return filter?.outputImage
         }
     }

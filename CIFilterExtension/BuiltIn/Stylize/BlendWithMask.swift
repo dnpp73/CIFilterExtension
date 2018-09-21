@@ -10,7 +10,7 @@ public struct BlendWithMask {
             kCIInputBackgroundImageKey: inputBackgroundImage,
             kCIInputMaskImageKey: inputMaskImage
         ]
-        let filter = CIFilter(name: "CIBlendWithAlphaMask", withInputParameters: parameters)
+        let filter = CIFilter(name: "CIBlendWithAlphaMask", parameters: parameters)
         return filter?.outputImage
     }
 }

@@ -20,7 +20,7 @@ public struct Convolution5X5 {
                 "inputWeights": inputWeights.vector,
                 "inputBias": inputBias
             ]
-            let filter = CIFilter(name: "CIConvolution5X5", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIConvolution5X5", parameters: parameters)
             return filter?.outputImage
         }
     }

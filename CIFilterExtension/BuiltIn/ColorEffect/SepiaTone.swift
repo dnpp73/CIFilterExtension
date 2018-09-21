@@ -12,7 +12,7 @@ public struct SepiaTone {
                 kCIInputImageKey: image,
                 "inputIntensity": inputIntensity
             ]
-            let filter = CIFilter(name: "CISepiaTone", withInputParameters: parameters)
+            let filter = CIFilter(name: "CISepiaTone", parameters: parameters)
             return filter?.outputImage
         }
     }

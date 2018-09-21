@@ -27,7 +27,7 @@ public struct CMYKHalftone {
                 "inputGCR": inputGCR,
                 "inputUCR": inputUCR
             ]
-            let filter = CIFilter(name: "CICMYKHalftone", withInputParameters: parameters)
+            let filter = CIFilter(name: "CICMYKHalftone", parameters: parameters)
             return filter?.outputImage
         }
     }

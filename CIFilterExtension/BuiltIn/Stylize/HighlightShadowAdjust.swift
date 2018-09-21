@@ -14,7 +14,7 @@ public struct HighlightShadowAdjust {
                 "inputHighlightAmount": inputHighlightAmount,
                 "inputShadowAmount": inputShadowAmount
             ]
-            let filter = CIFilter(name: "CIHighlightShadowAdjust", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIHighlightShadowAdjust", parameters: parameters)
             return filter?.outputImage
         }
     }

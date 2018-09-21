@@ -18,7 +18,7 @@ public struct ColorControls {
                 kCIInputBrightnessKey: inputBrightness,
                 kCIInputContrastKey: inputContrast
             ]
-            let filter = CIFilter(name: "CIColorControls", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorControls", parameters: parameters)
             return filter?.outputImage
         }
     }

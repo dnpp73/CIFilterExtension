@@ -21,7 +21,7 @@ public struct TorusLensDistortion {
                 kCIInputWidthKey: inputWidth,
                 kCIInputRefractionKey: inputRefraction
             ]
-            let filter = CIFilter(name: "CITorusLensDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CITorusLensDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

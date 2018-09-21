@@ -16,7 +16,7 @@ public struct Convolution9 {
                 "inputWeights": inputWeights.vector,
                 "inputBias": inputBias
             ]
-            let filter = CIFilter(name: "CIConvolution9Horizontal", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIConvolution9Horizontal", parameters: parameters)
             return filter?.outputImage
         }
     }
@@ -28,7 +28,7 @@ public struct Convolution9 {
                 "inputWeights": inputWeights.vector,
                 "inputBias": inputBias
             ]
-            let filter = CIFilter(name: "CIConvolution9Vertical", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIConvolution9Vertical", parameters: parameters)
             return filter?.outputImage
         }
     }

@@ -22,7 +22,7 @@ public struct Convolution7X7 {
                 "inputWeights": inputWeights.vector,
                 "inputBias": inputBias
             ]
-            let filter = CIFilter(name: "CIConvolution7X7", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIConvolution7X7", parameters: parameters)
             return filter?.outputImage
         }
     }

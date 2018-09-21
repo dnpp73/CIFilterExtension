@@ -12,7 +12,7 @@ public struct WhitePointAdjust {
             if let inputColor = inputColor {
                 parameters[kCIInputColorKey] = inputColor
             }
-            let filter = CIFilter(name: "CIWhitePointAdjust", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIWhitePointAdjust", parameters: parameters)
             return filter?.outputImage
         }
     }

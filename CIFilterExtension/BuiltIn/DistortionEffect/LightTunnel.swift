@@ -18,7 +18,7 @@ public struct LightTunnel {
                 "inputRotation": inputRotation,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CILightTunnel", withInputParameters: parameters)
+            let filter = CIFilter(name: "CILightTunnel", parameters: parameters)
             return filter?.outputImage
         }
     }

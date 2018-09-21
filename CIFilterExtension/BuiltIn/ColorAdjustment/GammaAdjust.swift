@@ -12,7 +12,7 @@ public struct GammaAdjust {
                 kCIInputImageKey: image,
                 "inputPower": inputPower
             ]
-            let filter = CIFilter(name: "CIGammaAdjust", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIGammaAdjust", parameters: parameters)
             return filter?.outputImage
         }
     }

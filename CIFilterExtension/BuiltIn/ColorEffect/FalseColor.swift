@@ -15,7 +15,7 @@ public struct FalseColor {
                 "inputColor0": inputColor0,
                 "inputColor1": inputColor1
             ]
-            let filter = CIFilter(name: "CIFalseColor", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIFalseColor", parameters: parameters)
             return filter?.outputImage
         }
     }

@@ -15,7 +15,7 @@ public struct ColorClamp {
                 "inputMinComponents": inputMinComponents.vector,
                 "inputMaxComponents": inputMaxComponents.vector
             ]
-            let filter = CIFilter(name: "CIColorClamp", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIColorClamp", parameters: parameters)
             return filter?.outputImage
         }
     }

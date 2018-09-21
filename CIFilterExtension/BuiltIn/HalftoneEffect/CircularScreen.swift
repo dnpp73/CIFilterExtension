@@ -18,7 +18,7 @@ public struct CircularScreen {
                 kCIInputWidthKey: inputWidth,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CICircularScreen", withInputParameters: parameters)
+            let filter = CIFilter(name: "CICircularScreen", parameters: parameters)
             return filter?.outputImage
         }
     }

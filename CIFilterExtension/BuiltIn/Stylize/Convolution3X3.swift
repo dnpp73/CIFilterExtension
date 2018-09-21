@@ -18,7 +18,7 @@ public struct Convolution3X3 {
                 "inputWeights": inputWeights.vector,
                 "inputBias": inputBias
             ]
-            let filter = CIFilter(name: "CIConvolution3X3", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIConvolution3X3", parameters: parameters)
             return filter?.outputImage
         }
     }

@@ -10,7 +10,7 @@ public struct Code128BarcodeGenerator {
             "inputMessage": inputMessage,
             "inputQuietSpace": inputQuietSpace
         ]
-        return CIFilter(name: "CICode128BarcodeGenerator", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CICode128BarcodeGenerator", parameters: parameters)?.outputImage
     }
     
 }

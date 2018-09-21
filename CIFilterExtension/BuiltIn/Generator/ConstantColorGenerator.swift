@@ -10,7 +10,7 @@ public struct ConstantColorGenerator {
         let parameters: Parameters = [
             "inputColor": inputColor
         ]
-        return CIFilter(name: "CIConstantColorGenerator", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CIConstantColorGenerator", parameters: parameters)?.outputImage
     }
     
 }

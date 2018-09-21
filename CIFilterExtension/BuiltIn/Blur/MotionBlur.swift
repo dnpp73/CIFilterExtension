@@ -15,7 +15,7 @@ public struct MotionBlur {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputAngleKey: inputAngle
             ]
-            let filter = CIFilter(name: "CIMotionBlur", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIMotionBlur", parameters: parameters)
             return filter?.outputImage
         }
     }

@@ -21,7 +21,7 @@ public struct HatchedScreen {
                 kCIInputWidthKey: inputWidth,
                 kCIInputSharpnessKey: inputSharpness
             ]
-            let filter = CIFilter(name: "CIHatchedScreen", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIHatchedScreen", parameters: parameters)
             return filter?.outputImage
         }
     }

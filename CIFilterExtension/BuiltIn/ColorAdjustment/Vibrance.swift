@@ -12,7 +12,7 @@ public struct Vibrance {
             if let inputAmount = inputAmount {
                 parameters["inputAmount"] = inputAmount
             }
-            let filter = CIFilter(name: "CIVibrance", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIVibrance", parameters: parameters)
             return filter?.outputImage
         }
     }

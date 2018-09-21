@@ -22,7 +22,7 @@ public struct StripesGenerator {
             kCIInputWidthKey: inputWidth,
             kCIInputSharpnessKey: inputSharpness
         ]
-        return CIFilter(name: "CIStripesGenerator", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CIStripesGenerator", parameters: parameters)?.outputImage
     }
     
 }

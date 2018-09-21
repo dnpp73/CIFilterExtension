@@ -12,7 +12,7 @@ public struct BoxBlur {
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIBoxBlur", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIBoxBlur", parameters: parameters)
             return filter?.outputImage
         }
     }

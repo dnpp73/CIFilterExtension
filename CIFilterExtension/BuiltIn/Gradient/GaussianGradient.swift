@@ -19,7 +19,7 @@ public struct GaussianGradient {
             "inputColor1": inputColor1,
             kCIInputRadiusKey: inputRadius
         ]
-        return CIFilter(name: "CIGaussianGradient", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CIGaussianGradient", parameters: parameters)?.outputImage
     }
     
 }

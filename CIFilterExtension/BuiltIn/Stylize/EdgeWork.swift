@@ -12,7 +12,7 @@ public struct EdgeWork {
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIEdgeWork", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIEdgeWork", parameters: parameters)
             return filter?.outputImage
         }
     }

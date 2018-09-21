@@ -15,7 +15,7 @@ public struct HexagonalPixellate {
                 kCIInputCenterKey: inputCenter.vector,
                 kCIInputScaleKey: inputScale
             ]
-            let filter = CIFilter(name: "CIHexagonalPixellate", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIHexagonalPixellate", parameters: parameters)
             return filter?.outputImage
         }
     }

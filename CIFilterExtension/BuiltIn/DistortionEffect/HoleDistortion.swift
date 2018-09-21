@@ -15,7 +15,7 @@ public struct HoleDistortion {
                 kCIInputCenterKey: inputCenter.vector,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIHoleDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIHoleDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

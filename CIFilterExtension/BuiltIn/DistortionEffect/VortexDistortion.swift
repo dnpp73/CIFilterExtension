@@ -18,7 +18,7 @@ public struct VortexDistortion {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputAngleKey: inputAngle
             ]
-            let filter = CIFilter(name: "CIVortexDistortion", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIVortexDistortion", parameters: parameters)
             return filter?.outputImage
         }
     }

@@ -15,7 +15,7 @@ public struct Pointillize {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputCenterKey: inputCenter.vector
             ]
-            let filter = CIFilter(name: "CIPointillize", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIPointillize", parameters: parameters)
             return filter?.outputImage
         }
     }

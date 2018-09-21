@@ -15,7 +15,7 @@ public struct Pixellate {
                 kCIInputCenterKey: inputCenter.vector,
                 kCIInputScaleKey: inputScale
             ]
-            let filter = CIFilter(name: "CIPixellate", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIPixellate", parameters: parameters)
             return filter?.outputImage
         }
     }

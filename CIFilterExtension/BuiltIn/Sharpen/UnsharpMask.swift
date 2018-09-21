@@ -15,7 +15,7 @@ public struct UnsharpMask {
                 kCIInputRadiusKey: inputRadius,
                 kCIInputIntensityKey: inputIntensity
             ]
-            let filter = CIFilter(name: "CIUnsharpMask", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIUnsharpMask", parameters: parameters)
             return filter?.outputImage
         }
     }

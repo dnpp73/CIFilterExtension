@@ -15,7 +15,7 @@ public struct ZoomBlur {
                 kCIInputCenterKey: inputCenter.vector,
                 kCIInputRadiusKey: inputRadius
             ]
-            let filter = CIFilter(name: "CIZoomBlur", withInputParameters: parameters)
+            let filter = CIFilter(name: "CIZoomBlur", parameters: parameters)
             return filter?.outputImage
         }
     }

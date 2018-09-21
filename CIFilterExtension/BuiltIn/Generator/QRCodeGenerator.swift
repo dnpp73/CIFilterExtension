@@ -16,7 +16,7 @@ public struct QRCodeGenerator {
             "inputMessage": inputMessage,
             "inputCorrectionLevel": inputCorrectionLevel.rawValue
         ]
-        return CIFilter(name: "CIQRCodeGenerator", withInputParameters: parameters)?.outputImage
+        return CIFilter(name: "CIQRCodeGenerator", parameters: parameters)?.outputImage
     }
     
 }
