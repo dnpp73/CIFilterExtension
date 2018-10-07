@@ -5,10 +5,10 @@ import CoreImage
 public struct QRCodeGenerator {
 
     public enum ErrorCorrectionLevel: String {
-        case L = "L"
-        case M = "M" // defaultValue
-        case Q = "Q"
-        case H = "H"
+        case L
+        case M // defaultValue
+        case Q
+        case H
     }
 
     public static func image(inputMessage: Data, inputCorrectionLevel: ErrorCorrectionLevel = .M) -> CIImage? {
