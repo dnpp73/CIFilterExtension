@@ -5,8 +5,8 @@ import CoreImage
 public struct GaussianGradient {
 
     public static let defaultInputCenter = XYPosition(x: 150.0, y: 150.0)
-    public static let defaultInputColor0 = CIColor(red: 1.0, green: 1.0, blue: 1.0, alpha:1.0)
-    public static let defaultInputColor1 = CIColor(red: 0.0, green: 0.0, blue: 0.0, alpha:0.0)
+    public static let defaultInputColor0 = CIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    public static let defaultInputColor1 = CIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
     public static let defaultInputRadius: CGFloat = 300.0
 
     public static func image(inputCenter: XYPosition = defaultInputCenter,

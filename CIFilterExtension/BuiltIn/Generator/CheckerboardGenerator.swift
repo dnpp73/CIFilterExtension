@@ -5,8 +5,8 @@ import CoreImage
 public struct CheckerboardGenerator {
 
     public static let defaultInputCenter = XYPosition(x: 150.0, y: 150.0)
-    public static let defaultInputColor0 = CIColor(red: 1.0, green: 1.0, blue: 1.0, alpha:1.0)
-    public static let defaultInputColor1 = CIColor(red: 0.0, green: 0.0, blue: 0.0, alpha:0.0)
+    public static let defaultInputColor0 = CIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    public static let defaultInputColor1 = CIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
     public static let defaultInputWidth: CGFloat = 80.0
     public static let defaultInputSharpness: CGFloat = 1.0
 

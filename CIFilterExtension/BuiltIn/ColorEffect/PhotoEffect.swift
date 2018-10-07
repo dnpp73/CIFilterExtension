@@ -3,7 +3,7 @@ import CoreImage
 
 public struct PhotoEffect {
 
-    // MARK:- Chrome
+    // MARK: - Chrome
 
     @available(iOS 7, OSX 10.9, *)
     public static var chrome: Filter {
@@ -15,7 +15,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: chrome, alpha: alpha)
     }
 
-    // MARK:- Fade
+    // MARK: - Fade
 
     @available(iOS 7, OSX 10.9, *)
     public static var fade: Filter {
@@ -27,7 +27,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: fade, alpha: alpha)
     }
 
-    // MARK:- Instant
+    // MARK: - Instant
 
     @available(iOS 7, OSX 10.9, *)
     public static var instant: Filter {
@@ -39,7 +39,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: instant, alpha: alpha)
     }
 
-    // MARK:- Mono
+    // MARK: - Mono
 
     @available(iOS 7, OSX 10.9, *)
     public static var mono: Filter {
@@ -51,7 +51,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: mono, alpha: alpha)
     }
 
-    // MARK:- Noir
+    // MARK: - Noir
 
     @available(iOS 7, OSX 10.9, *)
     public static var noir: Filter {
@@ -63,7 +63,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: noir, alpha: alpha)
     }
 
-    // MARK:- Process
+    // MARK: - Process
 
     @available(iOS 7, OSX 10.9, *)
     public static var process: Filter {
@@ -75,7 +75,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: process, alpha: alpha)
     }
 
-    // MARK:- Tonal
+    // MARK: - Tonal
 
     @available(iOS 7, OSX 10.9, *)
     public static var tonal: Filter {
@@ -87,7 +87,7 @@ public struct PhotoEffect {
         return SourceOverCompositing.alpha(filter: tonal, alpha: alpha)
     }
 
-    // MARK:- Transfer
+    // MARK: - Transfer
 
     @available(iOS 7, OSX 10.9, *)
     public static var transfer: Filter {

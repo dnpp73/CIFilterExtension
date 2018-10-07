@@ -15,7 +15,7 @@ public struct AffineClamp {
         }
     }
 
-    // MARK:- Util
+    // MARK: - Util
 
     internal static func clampAndCrop(_ filter: @escaping Filter) -> Filter {
         return { image in

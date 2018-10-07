@@ -8,7 +8,7 @@ public struct SourceOverCompositing {
         return composer(name: "CISourceOverCompositing")(inputBackgroundImage)
     }
 
-    // MARK:- Util
+    // MARK: - Util
 
     internal static func alpha(filter: @escaping Filter, alpha: CGFloat) -> Filter {
         return { image in

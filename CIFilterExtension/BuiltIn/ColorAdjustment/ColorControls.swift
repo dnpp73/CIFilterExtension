@@ -6,7 +6,7 @@ public struct ColorControls {
 
     public static let defaultInputSaturation: CGFloat = 1.0
     public static let defaultInputBrightness: CGFloat = 0.0
-    public static let defaultInputContrast:   CGFloat = 1.0
+    public static let defaultInputContrast: CGFloat = 1.0
 
     public static func filter(inputSaturation: CGFloat = defaultInputSaturation,
                               inputBrightness: CGFloat = defaultInputBrightness,

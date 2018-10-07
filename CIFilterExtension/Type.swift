@@ -1,7 +1,7 @@
 import Foundation
 import CoreImage
 
-// MARK:- Filter Type
+// MARK: - Filter Type
 
 public typealias Filter = (CIImage) -> CIImage?
 public typealias ImageComposer = (CIImage) -> Filter
@@ -10,24 +10,24 @@ public typealias Parameters = [String: Any]
 public typealias OptionalParameters = [String: Any?]
 public typealias FilterAttributes = [String: Any]
 
-// MARK:- Custom Operator for `Filter`
+// MARK: - Custom Operator for `Filter`
 
 infix operator |>>
 
 public func |>> (lhs: @escaping Filter, rhs: @escaping Filter) -> Filter {
     return { image in
-        lhs(image).flatMap{ image in rhs(image) }
+        lhs(image).flatMap { image in rhs(image) }
     }
 }
 
-// MARK:- Utility Internal Function for `Filter`
+// MARK: - Utility Internal Function for `Filter`
 
 internal func noParamsFilter(name: String) -> Filter {
     return { image in
         let parameters = [
             kCIInputImageKey: image
         ]
-        let filter = CIFilter(name:name, parameters: parameters)
+        let filter = CIFilter(name: name, parameters: parameters)
         return filter?.outputImage
     }
 }
@@ -45,7 +45,7 @@ internal func composer(name: String) -> ImageComposer {
     }
 }
 
-// MARK:- Public Structs
+// MARK: - Public Structs
 
 public struct RGBAComponents {
     public let r: CGFloat

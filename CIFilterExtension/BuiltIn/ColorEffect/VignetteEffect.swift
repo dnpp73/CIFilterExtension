@@ -8,7 +8,7 @@ public struct VignetteEffect {
     // ここには inputRadius の項目があるものの、 iOS 10.2.1 の iPhone 7 Plus 実機で動かしたところ、
     // parameters に kCIInputRadiusKey でなんらかの value を放り込んだ瞬間に真っ黒になる現象に遭遇した…
 
-    public static let defaultInputCenter = XYPosition(x:150.0, y:150.0)
+    public static let defaultInputCenter = XYPosition(x: 150.0, y: 150.0)
     public static let defaultInputIntensity: CGFloat = 1.0
     // public static let defaultInputRadius: CGFloat = 0.0
     public static let defaultInputFalloff: CGFloat = 0.0

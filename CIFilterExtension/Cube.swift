@@ -25,7 +25,7 @@ private func cubeRootIter(guess: Int, target: Int, ceil: Int) -> Int {
     return cubeRootIter(guess: guess + 1, target: target, ceil: ceil)
 }
 
-private func isCubeRoot(possibleRoot: Int, target: Int) -> Bool{
+private func isCubeRoot(possibleRoot: Int, target: Int) -> Bool {
     return cube(possibleRoot) == target
 }
 

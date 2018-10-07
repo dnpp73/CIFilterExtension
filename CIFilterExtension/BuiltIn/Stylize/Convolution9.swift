@@ -6,7 +6,7 @@ public struct Convolution9 {
 
     // TODO: 動作確認
 
-    public static let defaultInputWeights = ConvolutionVector9(w0: 0.0, w1:0.0, w2: 0.0, w3: 0.0, w4: 1.0, w5: 0.0, w6: 0.0, w7: 0.0, w8: 0.0)
+    public static let defaultInputWeights = ConvolutionVector9(w0: 0.0, w1: 0.0, w2: 0.0, w3: 0.0, w4: 1.0, w5: 0.0, w6: 0.0, w7: 0.0, w8: 0.0)
     public static let defaultInputBias: CGFloat = 0.0
 
     public static func filterHorizontal(inputWeights: ConvolutionVector9 = defaultInputWeights, inputBias: CGFloat = defaultInputBias) -> Filter {
