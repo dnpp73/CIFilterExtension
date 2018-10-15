@@ -4,7 +4,7 @@ import CoreImage
 @available(iOS 7, OSX 10.9, *)
 public struct Convolution9 {
 
-    // TODO: 動作確認
+    #warning("動作確認")
 
     public static let defaultInputWeights = ConvolutionVector9(w0: 0.0, w1: 0.0, w2: 0.0, w3: 0.0, w4: 1.0, w5: 0.0, w6: 0.0, w7: 0.0, w8: 0.0)
     public static let defaultInputBias: CGFloat = 0.0

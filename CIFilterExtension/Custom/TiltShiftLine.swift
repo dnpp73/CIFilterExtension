@@ -3,7 +3,7 @@ import CoreImage
 
 public struct TiltShiftLine {
 
-    // TODO: ちゃんと作る。
+    #warning("ちゃんと作る。")
 
     public static func filter(center: XYPosition? = nil,
                               blurRadius: CGFloat = 20.0) -> Filter {

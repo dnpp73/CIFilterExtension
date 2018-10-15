@@ -4,7 +4,7 @@ import CoreImage
 @available(iOS 9, OSX 10.9, *)
 public struct Convolution7X7 {
 
-    // TODO: 動作確認
+    #warning("動作確認")
 
     public static let defaultInputWeights = ConvolutionMatrix7X7(w00: 0.0, w01: 0.0, w02: 0.0, w03: 0.0, w04: 0.0, w05: 0.0, w06: 0.0,
                                                                  w10: 0.0, w11: 0.0, w12: 0.0, w13: 0.0, w14: 0.0, w15: 0.0, w16: 0.0,
