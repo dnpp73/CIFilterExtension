@@ -5,7 +5,7 @@ import CoreImage
 public struct SubtractBlendMode {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CISubtractBlendMode")(inputBackgroundImage)
+        composer(name: "CISubtractBlendMode")(inputBackgroundImage)
     }
 
 }

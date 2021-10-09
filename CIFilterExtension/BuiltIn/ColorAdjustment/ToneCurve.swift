@@ -15,7 +15,7 @@ public struct ToneCurve {
                               inputPoint2: XYOffset = defaultInputPoint2,
                               inputPoint3: XYOffset = defaultInputPoint3,
                               inputPoint4: XYOffset = defaultInputPoint4) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputPoint1": inputPoint1.vector,

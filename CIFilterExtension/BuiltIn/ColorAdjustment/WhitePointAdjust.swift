@@ -5,7 +5,7 @@ import CoreImage
 public struct WhitePointAdjust {
 
     public static func filter(inputColor: CIColor?) -> Filter {
-        return { image in
+        { image in
             var parameters: Parameters = [
                 kCIInputImageKey: image
             ]

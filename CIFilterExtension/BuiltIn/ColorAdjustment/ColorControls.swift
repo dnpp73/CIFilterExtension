@@ -11,7 +11,7 @@ public struct ColorControls {
     public static func filter(inputSaturation: CGFloat = defaultInputSaturation,
                               inputBrightness: CGFloat = defaultInputBrightness,
                               inputContrast: CGFloat = defaultInputContrast) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputSaturationKey: inputSaturation,

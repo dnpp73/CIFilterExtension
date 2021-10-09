@@ -5,7 +5,7 @@ import CoreImage
 public struct MedianFilter {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIMedianFilter")
+        noParamsFilter(name: "CIMedianFilter")
     }
 
 }

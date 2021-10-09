@@ -7,7 +7,7 @@ public struct GammaAdjust {
     public static let defaultInputPower: CGFloat = 0.75
 
     public static func filter(inputPower: CGFloat = defaultInputPower) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputPower": inputPower

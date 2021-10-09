@@ -5,7 +5,7 @@ import CoreImage
 public struct MaskToAlpha {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIMaskToAlpha")
+        noParamsFilter(name: "CIMaskToAlpha")
     }
 
 }

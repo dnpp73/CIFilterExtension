@@ -15,7 +15,7 @@ public struct ColorMatrix {
                               inputBVector: RGBAComponents = defaultInputBVector,
                               inputAVector: RGBAComponents = defaultInputAVector,
                               inputBiasVector: RGBAComponents = defaultInputBiasVector) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputRVector": inputRVector.vector,

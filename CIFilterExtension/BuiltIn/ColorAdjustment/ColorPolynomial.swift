@@ -10,7 +10,7 @@ public struct ColorPolynomial {
                               inputGreenCoefficients: PolynomialCoefficients = defaultCoefficients,
                               inputBlueCoefficients: PolynomialCoefficients = defaultCoefficients,
                               inputAlphaCoefficients: PolynomialCoefficients = defaultCoefficients) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputRedCoefficients": inputRedCoefficients.vector,

@@ -9,7 +9,7 @@ public struct FalseColor {
 
     public static func filter(inputColor0: CIColor = defaultInputColor0,
                               inputColor1: CIColor = defaultInputColor1) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputColor0": inputColor0,

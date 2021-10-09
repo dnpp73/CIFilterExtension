@@ -7,7 +7,7 @@ public struct ExposureAdjust {
     public static let defaultInputEV: CGFloat = 0.5
 
     public static func filter(inputEV: CGFloat = defaultInputEV) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputEVKey: inputEV

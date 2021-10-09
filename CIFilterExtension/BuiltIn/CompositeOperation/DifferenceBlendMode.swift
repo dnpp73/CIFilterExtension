@@ -5,7 +5,7 @@ import CoreImage
 public struct DifferenceBlendMode {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CIDifferenceBlendMode")(inputBackgroundImage)
+        composer(name: "CIDifferenceBlendMode")(inputBackgroundImage)
     }
 
 }

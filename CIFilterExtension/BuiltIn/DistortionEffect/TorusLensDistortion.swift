@@ -13,7 +13,7 @@ public struct TorusLensDistortion {
                               inputRadius: CGFloat = defaultInputRadius,
                               inputWidth: CGFloat = defaultInputWidth,
                               inputRefraction: CGFloat = defaultInputRefraction) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,
@@ -30,7 +30,7 @@ public struct TorusLensDistortion {
                                               inputRadius: CGFloat = defaultInputRadius,
                                               inputWidth: CGFloat = defaultInputWidth,
                                               inputRefraction: CGFloat = defaultInputRefraction) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputWidth: inputWidth, inputRefraction: inputRefraction))
+        AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputWidth: inputWidth, inputRefraction: inputRefraction))
     }
 
 }

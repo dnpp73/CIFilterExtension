@@ -7,7 +7,7 @@ public struct HueAdjust {
     public static let defaultInputAngle: CGFloat = 0.0
 
     public static func filter(inputAngle: CGFloat = defaultInputAngle) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputAngleKey: inputAngle

@@ -9,7 +9,7 @@ public struct TemperatureAndTint {
 
     public static func filter(inputNeutral: TempAndTint = defaultInputNeutral,
                               targetInputNeutral: TempAndTint = defaultTargetInputNeutral) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputNeutral": inputNeutral.vector,

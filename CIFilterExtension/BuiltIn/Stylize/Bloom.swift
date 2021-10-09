@@ -9,7 +9,7 @@ public struct Bloom {
 
     public static func filter(inputRadius: CGFloat = defaultInputRadius,
                               inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius,
@@ -22,7 +22,7 @@ public struct Bloom {
 
     public static func filterWithClampAndCrop(inputRadius: CGFloat = defaultInputRadius,
                                               inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputIntensity: inputIntensity))
+        AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputIntensity: inputIntensity))
     }
 
 }

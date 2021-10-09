@@ -7,7 +7,7 @@ public struct TiltShiftLine {
 
     public static func filter(center: XYPosition? = nil,
                               blurRadius: CGFloat = 20.0) -> Filter {
-        return { image in
+        { image in
 
             // let c = center ?? XYPosition(x: rect.midX, y: rect.midY)
 

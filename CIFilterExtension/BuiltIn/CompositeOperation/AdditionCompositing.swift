@@ -5,7 +5,7 @@ import CoreImage
 public struct AdditionCompositing {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CIAdditionCompositing")(inputBackgroundImage)
+        composer(name: "CIAdditionCompositing")(inputBackgroundImage)
     }
 
 }

@@ -9,7 +9,7 @@ public struct ColorMonochrome {
 
     public static func filter(inputColor: CIColor = defaultInputColor,
                               inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputColorKey: inputColor,

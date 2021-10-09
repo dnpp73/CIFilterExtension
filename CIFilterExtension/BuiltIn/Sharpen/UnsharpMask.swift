@@ -9,7 +9,7 @@ public struct UnsharpMask {
 
     public static func filter(inputRadius: CGFloat = defaultInputRadius,
                               inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius,

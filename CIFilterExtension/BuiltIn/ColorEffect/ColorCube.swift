@@ -5,7 +5,7 @@ import CoreImage
 public struct ColorCube {
 
     public static func filter(inputCube: ColorCubeData) -> Filter {
-        return { image in
+        { image in
             var parameters: Parameters = [
                 kCIInputImageKey: image
             ]

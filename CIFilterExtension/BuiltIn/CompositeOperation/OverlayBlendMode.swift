@@ -5,7 +5,7 @@ import CoreImage
 public struct OverlayBlendMode {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CIOverlayBlendMode")(inputBackgroundImage)
+        composer(name: "CIOverlayBlendMode")(inputBackgroundImage)
     }
 
 }

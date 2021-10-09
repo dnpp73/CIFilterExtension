@@ -15,7 +15,7 @@ public typealias FilterAttributes = [String: Any]
 infix operator |>>
 
 public func |>> (lhs: @escaping Filter, rhs: @escaping Filter) -> Filter {
-    return { image in
+    { image in
         lhs(image).flatMap { image in rhs(image) }
     }
 }
@@ -23,7 +23,7 @@ public func |>> (lhs: @escaping Filter, rhs: @escaping Filter) -> Filter {
 // MARK: - Utility Internal Function for `Filter`
 
 internal func noParamsFilter(name: String) -> Filter {
-    return { image in
+    { image in
         let parameters = [
             kCIInputImageKey: image
         ]
@@ -33,8 +33,7 @@ internal func noParamsFilter(name: String) -> Filter {
 }
 
 internal func composer(name: String) -> ImageComposer {
-    return { bgImage in
-        return { image in
+    { bgImage in { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputBackgroundImage": bgImage
@@ -59,7 +58,7 @@ public struct RGBAComponents {
         self.a = a
     }
     public var vector: CIVector {
-        return CIVector(x: r, y: g, z: b, w: a)
+        CIVector(x: r, y: g, z: b, w: a)
     }
 }
 
@@ -71,7 +70,7 @@ public struct TempAndTint {
         self.tint = tint
     }
     public var vector: CIVector {
-        return CIVector(x: temp, y: tint)
+        CIVector(x: temp, y: tint)
     }
 }
 
@@ -83,7 +82,7 @@ public struct XYPosition {
         self.y = y
     }
     public var vector: CIVector {
-        return CIVector(x: x, y: y)
+        CIVector(x: x, y: y)
     }
 }
 
@@ -95,7 +94,7 @@ public struct XYOffset {
         self.y = y
     }
     public var vector: CIVector {
-        return CIVector(x: x, y: y)
+        CIVector(x: x, y: y)
     }
 }
 
@@ -111,7 +110,7 @@ public struct PolynomialCoefficients {
         self.a3 = a3
     }
     public var vector: CIVector {
-        return CIVector(x: a0, y: a1, z: a2, w: a3)
+        CIVector(x: a0, y: a1, z: a2, w: a3)
     }
 }
 
@@ -139,7 +138,7 @@ public struct CrossPolynomialCoefficients {
         self.a9 = a9
     }
     public var vector: CIVector {
-        return CIVector(string: "[\(a0) \(a1) \(a2) \(a3) \(a4) \(a5) \(a6) \(a7) \(a8) \(a9)]")
+        CIVector(string: "[\(a0) \(a1) \(a2) \(a3) \(a4) \(a5) \(a6) \(a7) \(a8) \(a9)]")
     }
 }
 
@@ -167,7 +166,7 @@ public struct ConvolutionMatrix3X3 {
         self.w22 = w22
     }
     public var vector: CIVector {
-        return CIVector(string: "[\(w00) \(w01) \(w02) \(w10) \(w11) \(w12) \(w20) \(w21) \(w22)]")
+        CIVector(string: "[\(w00) \(w01) \(w02) \(w10) \(w11) \(w12) \(w20) \(w21) \(w22)]")
     }
 }
 
@@ -229,7 +228,7 @@ public struct ConvolutionMatrix5X5 {
         self.w44 = w44
     }
     public var vector: CIVector {
-        return CIVector(string: "[\(w00) \(w01) \(w02) \(w03) \(w04) \(w10) \(w11) \(w12) \(w13) \(w14) \(w20) \(w21) \(w22) \(w23) \(w24) \(w30) \(w31) \(w32) \(w33) \(w34) \(w40) \(w41) \(w42) \(w43) \(w44)]")
+        CIVector(string: "[\(w00) \(w01) \(w02) \(w03) \(w04) \(w10) \(w11) \(w12) \(w13) \(w14) \(w20) \(w21) \(w22) \(w23) \(w24) \(w30) \(w31) \(w32) \(w33) \(w34) \(w40) \(w41) \(w42) \(w43) \(w44)]")
     }
 }
 
@@ -341,7 +340,7 @@ public struct ConvolutionMatrix7X7 {
         self.w66 = w66
     }
     public var vector: CIVector {
-        return CIVector(string: "[\(w00) \(w01) \(w02) \(w03) \(w04) \(w05) \(w06) \(w10) \(w11) \(w12) \(w13) \(w14) \(w15) \(w16) \(w20) \(w21) \(w22) \(w23) \(w24) \(w25) \(w26) \(w30) \(w31) \(w32) \(w33) \(w34) \(w35) \(w36) \(w40) \(w41) \(w42) \(w43) \(w44) \(w45) \(w46) \(w50) \(w51) \(w52) \(w53) \(w54) \(w55) \(w56) \(w60) \(w61) \(w62) \(w63) \(w64) \(w65) \(w66)]")
+        CIVector(string: "[\(w00) \(w01) \(w02) \(w03) \(w04) \(w05) \(w06) \(w10) \(w11) \(w12) \(w13) \(w14) \(w15) \(w16) \(w20) \(w21) \(w22) \(w23) \(w24) \(w25) \(w26) \(w30) \(w31) \(w32) \(w33) \(w34) \(w35) \(w36) \(w40) \(w41) \(w42) \(w43) \(w44) \(w45) \(w46) \(w50) \(w51) \(w52) \(w53) \(w54) \(w55) \(w56) \(w60) \(w61) \(w62) \(w63) \(w64) \(w65) \(w66)]")
     }
 }
 
@@ -367,6 +366,6 @@ public struct ConvolutionVector9 {
         self.w8 = w8
     }
     public var vector: CIVector {
-        return CIVector(string: "[\(w0) \(w1) \(w2) \(w3) \(w4) \(w5) \(w6) \(w7) \(w8)]")
+        CIVector(string: "[\(w0) \(w1) \(w2) \(w3) \(w4) \(w5) \(w6) \(w7) \(w8)]")
     }
 }

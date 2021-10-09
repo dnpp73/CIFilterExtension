@@ -9,7 +9,7 @@ public struct Crystallize {
 
     public static func filter(inputRadius: CGFloat = defaultInputRadius,
                               inputCenter: XYPosition = defaultInputCenter) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius,
@@ -22,7 +22,7 @@ public struct Crystallize {
 
     public static func filterWithClampAndCrop(inputRadius: CGFloat = defaultInputRadius,
                                               inputCenter: XYPosition = defaultInputCenter) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputCenter: inputCenter))
+        AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputCenter: inputCenter))
     }
 
 }

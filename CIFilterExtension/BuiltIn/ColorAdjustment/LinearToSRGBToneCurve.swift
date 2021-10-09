@@ -5,7 +5,7 @@ import CoreImage
 public struct LinearToSRGBToneCurve {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CILinearToSRGBToneCurve")
+        noParamsFilter(name: "CILinearToSRGBToneCurve")
     }
 
 }

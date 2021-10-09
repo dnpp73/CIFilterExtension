@@ -7,7 +7,7 @@ public struct GaussianBlur {
     public static let defaultInputRadius: CGFloat = 10.0
 
     public static func filter(inputRadius: CGFloat = defaultInputRadius) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius
@@ -18,7 +18,7 @@ public struct GaussianBlur {
     }
 
     public static func filterWithClampAndCrop(inputRadius: CGFloat = defaultInputRadius) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputRadius: inputRadius))
+        AffineClamp.clampAndCrop(filter(inputRadius: inputRadius))
     }
 
 }

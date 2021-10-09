@@ -7,7 +7,7 @@ public struct ColorPosterize {
     public static let defaultInputLevels: CGFloat = 6.0
 
     public static func filter(inputLevels: CGFloat? = defaultInputLevels) -> Filter {
-        return { image in
+        { image in
             var parameters: Parameters = [
                 kCIInputImageKey: image
             ]

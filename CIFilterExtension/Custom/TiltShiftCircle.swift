@@ -17,7 +17,7 @@ public struct TiltShiftCircle {
                               center: XYPosition? = nil,
                               radius0: CGFloat? = nil,
                               radius1: CGFloat? = nil) -> Filter {
-        return { image in
+        { image in
 
             let rect = image.extent
 

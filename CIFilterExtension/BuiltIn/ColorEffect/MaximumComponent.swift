@@ -5,7 +5,7 @@ import CoreImage
 public struct MaximumComponent {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIMaximumComponent")
+        noParamsFilter(name: "CIMaximumComponent")
     }
 
 }

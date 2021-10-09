@@ -5,7 +5,7 @@ import CoreImage
 public struct ComicEffect {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIComicEffect")
+        noParamsFilter(name: "CIComicEffect")
     }
 
 }

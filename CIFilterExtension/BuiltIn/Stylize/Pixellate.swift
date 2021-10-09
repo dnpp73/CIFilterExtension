@@ -9,7 +9,7 @@ public struct Pixellate {
 
     public static func filter(inputCenter: XYPosition = defaultInputCenter,
                               inputScale: CGFloat = defaultInputScale) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,
@@ -22,7 +22,7 @@ public struct Pixellate {
 
     public static func filterWithClampAndCrop(inputCenter: XYPosition = defaultInputCenter,
                                               inputScale: CGFloat = defaultInputScale) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputScale: inputScale))
+        AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputScale: inputScale))
     }
 
 }

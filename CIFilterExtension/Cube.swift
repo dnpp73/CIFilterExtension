@@ -4,7 +4,7 @@ import CoreImage
 public typealias ColorCubeData = [RGBAComponents]
 
 internal func countIsCube(dividend: Int) -> Bool {
-    return cubeRoot(dividend: dividend) != 0
+    cubeRoot(dividend: dividend) != 0
 }
 
 internal func cubeRoot(dividend: Int) -> Int {
@@ -26,9 +26,9 @@ private func cubeRootIter(guess: Int, target: Int, ceil: Int) -> Int {
 }
 
 private func isCubeRoot(possibleRoot: Int, target: Int) -> Bool {
-    return cube(possibleRoot) == target
+    cube(possibleRoot) == target
 }
 
 private func cube(_ x: Int) -> Int {
-    return x * x * x
+    x * x * x
 }

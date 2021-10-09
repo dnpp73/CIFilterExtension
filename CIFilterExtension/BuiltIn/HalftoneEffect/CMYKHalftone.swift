@@ -17,7 +17,7 @@ public struct CMYKHalftone {
                               inputSharpness: CGFloat = defaultInputSharpness,
                               inputGCR: CGFloat = defaultInputGCR,
                               inputUCR: CGFloat = defaultInputUCR) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,

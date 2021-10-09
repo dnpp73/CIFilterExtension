@@ -9,7 +9,7 @@ public struct ColorClamp {
 
     public static func filter(inputMinComponents: RGBAComponents = defaultInputMinComponents,
                               inputMaxComponents: RGBAComponents = defaultInputMaxComponents) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputMinComponents": inputMinComponents.vector,

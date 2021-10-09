@@ -11,7 +11,7 @@ public struct ColorCrossPolynomial {
     public static func filter(inputRedCoefficients: CrossPolynomialCoefficients = defaultInputRedCoefficients,
                               inputGreenCoefficients: CrossPolynomialCoefficients = defaultInputGreenCoefficients,
                               inputBlueCoefficients: CrossPolynomialCoefficients = defaultInputBlueCoefficients) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputRedCoefficients": inputRedCoefficients.vector,

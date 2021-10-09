@@ -11,7 +11,7 @@ public struct TwirlDistortion {
     public static func filter(inputCenter: XYPosition = defaultInputCenter,
                               inputRadius: CGFloat = defaultInputRadius,
                               inputAngle: CGFloat = defaultInputAngle) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,
@@ -26,7 +26,7 @@ public struct TwirlDistortion {
     public static func filterWithClampAndCrop(inputCenter: XYPosition = defaultInputCenter,
                                               inputRadius: CGFloat = defaultInputRadius,
                                               inputAngle: CGFloat = defaultInputAngle) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputAngle: inputAngle))
+        AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputAngle: inputAngle))
     }
 
 }

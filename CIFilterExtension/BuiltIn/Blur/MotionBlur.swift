@@ -9,7 +9,7 @@ public struct MotionBlur {
 
     public static func filter(inputRadius: CGFloat = defaultInputRadius,
                               inputAngle: CGFloat = defaultInputAngle) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputRadiusKey: inputRadius,
@@ -22,7 +22,7 @@ public struct MotionBlur {
 
     public static func filterWithClampAndCrop(inputRadius: CGFloat = defaultInputRadius,
                                               inputAngle: CGFloat = defaultInputAngle) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputAngle: inputAngle))
+        AffineClamp.clampAndCrop(filter(inputRadius: inputRadius, inputAngle: inputAngle))
     }
 
 }

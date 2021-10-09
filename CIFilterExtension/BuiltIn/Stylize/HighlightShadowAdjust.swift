@@ -8,7 +8,7 @@ public struct HighlightShadowAdjust {
     public static let defaultInputShadowAmount: CGFloat = 1.0
 
     public static func filter(inputHighlightAmount: CGFloat = defaultInputHighlightAmount, inputShadowAmount: CGFloat = defaultInputShadowAmount) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputHighlightAmount": inputHighlightAmount,

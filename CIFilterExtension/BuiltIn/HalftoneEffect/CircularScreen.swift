@@ -11,7 +11,7 @@ public struct CircularScreen {
     public static func filter(inputCenter: XYPosition = defaultInputCenter,
                               inputWidth: CGFloat = defaultInputWidth,
                               inputSharpness: CGFloat = defaultInputSharpness) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,

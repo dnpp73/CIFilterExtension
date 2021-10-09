@@ -11,7 +11,7 @@ public struct PinchDistortion {
     public static func filter(inputCenter: XYPosition = defaultInputCenter,
                               inputRadius: CGFloat = defaultInputRadius,
                               inputScale: CGFloat = defaultInputScale) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,
@@ -26,7 +26,7 @@ public struct PinchDistortion {
     public static func filterWithClampAndCrop(inputCenter: XYPosition = defaultInputCenter,
                                               inputRadius: CGFloat = defaultInputRadius,
                                               inputScale: CGFloat = defaultInputScale) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputScale: inputScale))
+        AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius, inputScale: inputScale))
     }
 
 }

@@ -5,7 +5,7 @@ import CoreImage
 public struct AffineClamp {
 
     public static func filter(inputTransform: CGAffineTransform) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputTransformKey: inputTransform
@@ -18,7 +18,7 @@ public struct AffineClamp {
     // MARK: - Util
 
     internal static func clampAndCrop(_ filter: @escaping Filter) -> Filter {
-        return { image in
+        { image in
             let clamp = AffineClamp.filter(inputTransform: .identity)
             guard let clampedImage = clamp(image) else {
                 return nil

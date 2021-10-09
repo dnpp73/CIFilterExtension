@@ -10,7 +10,7 @@ public struct Convolution9 {
     public static let defaultInputBias: CGFloat = 0.0
 
     public static func filterHorizontal(inputWeights: ConvolutionVector9 = defaultInputWeights, inputBias: CGFloat = defaultInputBias) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputWeights": inputWeights.vector,
@@ -22,7 +22,7 @@ public struct Convolution9 {
     }
 
     public static func filterVertical(inputWeights: ConvolutionVector9 = defaultInputWeights, inputBias: CGFloat = defaultInputBias) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputWeights": inputWeights.vector,

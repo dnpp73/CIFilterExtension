@@ -9,7 +9,7 @@ public struct HoleDistortion {
 
     public static func filter(inputCenter: XYPosition = defaultInputCenter,
                               inputRadius: CGFloat = defaultInputRadius) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,
@@ -22,7 +22,7 @@ public struct HoleDistortion {
 
     public static func filterWithClampAndCrop(inputCenter: XYPosition = defaultInputCenter,
                                               inputRadius: CGFloat = defaultInputRadius) -> Filter {
-        return AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius))
+        AffineClamp.clampAndCrop(filter(inputCenter: inputCenter, inputRadius: inputRadius))
     }
 
 }

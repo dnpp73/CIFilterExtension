@@ -5,7 +5,7 @@ import CoreImage
 public struct ColorInvert {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIColorInvert")
+        noParamsFilter(name: "CIColorInvert")
     }
 
 }

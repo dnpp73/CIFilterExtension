@@ -5,7 +5,7 @@ import CoreImage
 public struct ScreenBlendMode {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CIScreenBlendMode")(inputBackgroundImage)
+        composer(name: "CIScreenBlendMode")(inputBackgroundImage)
     }
 
 }

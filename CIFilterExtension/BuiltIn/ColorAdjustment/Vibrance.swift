@@ -5,7 +5,7 @@ import CoreImage
 public struct Vibrance {
 
     public static func filter(inputAmount: CGFloat?) -> Filter {
-        return { image in
+        { image in
             var parameters: Parameters = [
                 kCIInputImageKey: image
             ]

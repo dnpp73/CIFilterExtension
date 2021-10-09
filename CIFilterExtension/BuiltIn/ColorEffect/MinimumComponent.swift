@@ -5,7 +5,7 @@ import CoreImage
 public struct MinimumComponent {
 
     public static var filter: Filter {
-        return noParamsFilter(name: "CIMinimumComponent")
+        noParamsFilter(name: "CIMinimumComponent")
     }
 
 }

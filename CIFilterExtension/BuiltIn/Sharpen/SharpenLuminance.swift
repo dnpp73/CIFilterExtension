@@ -7,7 +7,7 @@ public struct SharpenLuminance {
     public static let defaultInputSharpness: CGFloat = 0.4
 
     public static func filter(inputSharpness: CGFloat = defaultInputSharpness) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputSharpnessKey: inputSharpness

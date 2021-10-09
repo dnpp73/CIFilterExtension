@@ -5,7 +5,7 @@ import CoreImage
 public struct RandomGenerator {
 
     public static var image: CIImage? {
-        return CIFilter(name: "CIRandomGenerator")?.outputImage
+        CIFilter(name: "CIRandomGenerator")?.outputImage
     }
 
 }

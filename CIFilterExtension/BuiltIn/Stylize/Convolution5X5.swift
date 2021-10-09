@@ -14,7 +14,7 @@ public struct Convolution5X5 {
     public static let defaultInputBias: CGFloat = 0.0
 
     public static func filter(inputWeights: ConvolutionMatrix5X5 = defaultInputWeights, inputBias: CGFloat = defaultInputBias) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputWeights": inputWeights.vector,

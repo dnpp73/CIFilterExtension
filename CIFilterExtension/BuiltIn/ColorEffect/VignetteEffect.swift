@@ -17,7 +17,7 @@ public struct VignetteEffect {
                               inputIntensity: CGFloat = defaultInputIntensity,
                               // inputRadius: CGFloat = defaultInputRadius,
                               inputFalloff: CGFloat = defaultInputFalloff) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 kCIInputCenterKey: inputCenter.vector,

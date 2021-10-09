@@ -5,13 +5,13 @@ import CoreImage
 public struct SourceOverCompositing {
 
     public static func filter(inputBackgroundImage: CIImage) -> Filter {
-        return composer(name: "CISourceOverCompositing")(inputBackgroundImage)
+        composer(name: "CISourceOverCompositing")(inputBackgroundImage)
     }
 
     // MARK: - Util
 
     internal static func alpha(filter: @escaping Filter, alpha: CGFloat) -> Filter {
-        return { image in
+        { image in
             guard let filteredImage = filter(image) else {
                 return nil
             }

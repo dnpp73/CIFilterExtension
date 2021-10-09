@@ -9,7 +9,7 @@ public struct NoiseReduction {
 
     public static func filter(inputNoiseLevel: CGFloat = defaultInputNoiseLevel,
                               inputSharpness: CGFloat = defaultInputSharpness) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputNoiseLevel": inputNoiseLevel,

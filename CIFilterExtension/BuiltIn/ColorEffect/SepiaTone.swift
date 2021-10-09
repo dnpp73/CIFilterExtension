@@ -7,7 +7,7 @@ public struct SepiaTone {
     public static let defaultInputIntensity: CGFloat = 1.0
 
     public static func filter(inputIntensity: CGFloat = defaultInputIntensity) -> Filter {
-        return { image in
+        { image in
             let parameters: Parameters = [
                 kCIInputImageKey: image,
                 "inputIntensity": inputIntensity

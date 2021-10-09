@@ -5,7 +5,7 @@ import CoreImage
 public struct ColorMap {
 
     public static func filter(inputGradientImage: CIImage) -> Filter {
-        return { image in
+        { image in
             let parameters = [
                 kCIInputImageKey: image,
                 "inputGradientImage": inputGradientImage
