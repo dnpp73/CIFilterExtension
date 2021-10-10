@@ -106,6 +106,8 @@
 		194C9FBE1EA7D743007603B8 /* TiltShiftLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */; };
 		19A5F74B2712E1B3007C3865 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6D92712E1B3007C3865 /* Type.swift */; };
 		19A5F74C2712E1B3007C3865 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6DA2712E1B3007C3865 /* Cube.swift */; };
+		19A5F7AF2712EC04007C3865 /* AttributedTextImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F7AE2712EC04007C3865 /* AttributedTextImageGenerator.swift */; };
+		19A5F7B12712F2E2007C3865 /* TextImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F7B02712F2E2007C3865 /* TextImageGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +217,8 @@
 		19A5F6D92712E1B3007C3865 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		19A5F6DA2712E1B3007C3865 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		19A5F7AD2712E3D4007C3865 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		19A5F7AE2712EC04007C3865 /* AttributedTextImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedTextImageGenerator.swift; sourceTree = "<group>"; };
+		19A5F7B02712F2E2007C3865 /* TextImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +389,7 @@
 		194C9F231EA7D71E007603B8 /* Generator */ = {
 			isa = PBXGroup;
 			children = (
+				19A5F7AE2712EC04007C3865 /* AttributedTextImageGenerator.swift */,
 				194C9F241EA7D71E007603B8 /* CheckerboardGenerator.swift */,
 				194C9F251EA7D71E007603B8 /* Code128BarcodeGenerator.swift */,
 				194C9F261EA7D71E007603B8 /* ConstantColorGenerator.swift */,
@@ -392,6 +397,7 @@
 				194C9F281EA7D71E007603B8 /* QRCodeGenerator.swift */,
 				194C9F291EA7D71E007603B8 /* RandomGenerator.swift */,
 				194C9F2A1EA7D71E007603B8 /* StripesGenerator.swift */,
+				19A5F7B02712F2E2007C3865 /* TextImageGenerator.swift */,
 			);
 			path = Generator;
 			sourceTree = "<group>";
@@ -686,11 +692,13 @@
 				194C9F961EA7D71E007603B8 /* CircularScreen.swift in Sources */,
 				194C9F731EA7D71E007603B8 /* MaskToAlpha.swift in Sources */,
 				194C9FAC1EA7D71E007603B8 /* LineOverlay.swift in Sources */,
+				19A5F7B12712F2E2007C3865 /* TextImageGenerator.swift in Sources */,
 				194C9F5B1EA7D71E007603B8 /* MotionBlur.swift in Sources */,
 				194C9F721EA7D71E007603B8 /* FalseColor.swift in Sources */,
 				194C9F951EA7D71E007603B8 /* SmoothLinearGradient.swift in Sources */,
 				194C9F891EA7D71E007603B8 /* VortexDistortion.swift in Sources */,
 				194C9FA21EA7D71E007603B8 /* Convolution5X5.swift in Sources */,
+				19A5F7AF2712EC04007C3865 /* AttributedTextImageGenerator.swift in Sources */,
 				194C9FB31EA7D71E007603B8 /* TileEffect.swift in Sources */,
 				194C9F791EA7D71E007603B8 /* VignetteEffect.swift in Sources */,
 				194C9F7B1EA7D71E007603B8 /* CompositeOperation.swift in Sources */,
