@@ -214,6 +214,7 @@
 		194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftLine.swift; sourceTree = "<group>"; };
 		19A5F6D92712E1B3007C3865 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		19A5F6DA2712E1B3007C3865 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		19A5F7AD2712E3D4007C3865 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +231,7 @@
 		194C9ECA1EA7CC86007603B8 = {
 			isa = PBXGroup;
 			children = (
+				19A5F7AD2712E3D4007C3865 /* Package.swift */,
 				194C9EE11EA7D5CC007603B8 /* dotfiles */,
 				194C9EE01EA7D5C1007603B8 /* Documentation */,
 				19A5F6D82712E1B3007C3865 /* Sources */,
