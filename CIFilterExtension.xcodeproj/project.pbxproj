@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		194C9ED91EA7CC86007603B8 /* CIFilterExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 194C9ED71EA7CC86007603B8 /* CIFilterExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		194C9EE71EA7D706007603B8 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9EE61EA7D706007603B8 /* Type.swift */; };
-		194C9EE91EA7D714007603B8 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9EE81EA7D714007603B8 /* Cube.swift */; };
 		194C9F571EA7D71E007603B8 /* BoxBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9EEC1EA7D71E007603B8 /* BoxBlur.swift */; };
 		194C9F581EA7D71E007603B8 /* DiscBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9EED1EA7D71E007603B8 /* DiscBlur.swift */; };
 		194C9F591EA7D71E007603B8 /* GaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9EEE1EA7D71E007603B8 /* GaussianBlur.swift */; };
@@ -106,6 +104,8 @@
 		194C9FB41EA7D71E007603B8 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9F561EA7D71E007603B8 /* Transition.swift */; };
 		194C9FBD1EA7D743007603B8 /* TiltShiftCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9FBB1EA7D743007603B8 /* TiltShiftCircle.swift */; };
 		194C9FBE1EA7D743007603B8 /* TiltShiftLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */; };
+		19A5F74B2712E1B3007C3865 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6D92712E1B3007C3865 /* Type.swift */; };
+		19A5F74C2712E1B3007C3865 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6DA2712E1B3007C3865 /* Cube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,8 +116,6 @@
 		194C9EE31EA7D5D5007603B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		194C9EE41EA7D5E9007603B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		194C9EE51EA7D5E9007603B8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		194C9EE61EA7D706007603B8 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
-		194C9EE81EA7D714007603B8 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		194C9EEC1EA7D71E007603B8 /* BoxBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxBlur.swift; sourceTree = "<group>"; };
 		194C9EED1EA7D71E007603B8 /* DiscBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscBlur.swift; sourceTree = "<group>"; };
 		194C9EEE1EA7D71E007603B8 /* GaussianBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaussianBlur.swift; sourceTree = "<group>"; };
@@ -214,6 +212,8 @@
 		194C9F561EA7D71E007603B8 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		194C9FBB1EA7D743007603B8 /* TiltShiftCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftCircle.swift; sourceTree = "<group>"; };
 		194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftLine.swift; sourceTree = "<group>"; };
+		19A5F6D92712E1B3007C3865 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		19A5F6DA2712E1B3007C3865 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +232,7 @@
 			children = (
 				194C9EE11EA7D5CC007603B8 /* dotfiles */,
 				194C9EE01EA7D5C1007603B8 /* Documentation */,
+				19A5F6D82712E1B3007C3865 /* Sources */,
 				194C9ED61EA7CC86007603B8 /* CIFilterExtension */,
 				194C9ED51EA7CC86007603B8 /* Products */,
 			);
@@ -250,10 +251,6 @@
 			children = (
 				194C9ED81EA7CC86007603B8 /* Info.plist */,
 				194C9ED71EA7CC86007603B8 /* CIFilterExtension.h */,
-				194C9EE61EA7D706007603B8 /* Type.swift */,
-				194C9EE81EA7D714007603B8 /* Cube.swift */,
-				194C9EEA1EA7D71E007603B8 /* BuiltIn */,
-				194C9FBA1EA7D743007603B8 /* Custom */,
 			);
 			path = CIFilterExtension;
 			sourceTree = "<group>";
@@ -498,6 +495,17 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		19A5F6D82712E1B3007C3865 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				19A5F6D92712E1B3007C3865 /* Type.swift */,
+				19A5F6DA2712E1B3007C3865 /* Cube.swift */,
+				194C9EEA1EA7D71E007603B8 /* BuiltIn */,
+				194C9FBA1EA7D743007603B8 /* Custom */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -603,7 +611,6 @@
 				194C9F811EA7D71E007603B8 /* SubtractBlendMode.swift in Sources */,
 				194C9F741EA7D71E007603B8 /* MaximumComponent.swift in Sources */,
 				194C9F801EA7D71E007603B8 /* SourceOverCompositing.swift in Sources */,
-				194C9EE91EA7D714007603B8 /* Cube.swift in Sources */,
 				194C9F711EA7D71E007603B8 /* ColorPosterize.swift in Sources */,
 				194C9F9F1EA7D71E007603B8 /* Bloom.swift in Sources */,
 				194C9F691EA7D71E007603B8 /* Vibrance.swift in Sources */,
@@ -634,6 +641,7 @@
 				194C9F781EA7D71E007603B8 /* Vignette.swift in Sources */,
 				194C9F7A1EA7D71E007603B8 /* AdditionCompositing.swift in Sources */,
 				194C9F971EA7D71E007603B8 /* CMYKHalftone.swift in Sources */,
+				19A5F74C2712E1B3007C3865 /* Cube.swift in Sources */,
 				194C9F7C1EA7D71E007603B8 /* DifferenceBlendMode.swift in Sources */,
 				194C9F841EA7D71E007603B8 /* HoleDistortion.swift in Sources */,
 				194C9F901EA7D71E007603B8 /* StripesGenerator.swift in Sources */,
@@ -669,9 +677,9 @@
 				194C9F7F1EA7D71E007603B8 /* ScreenBlendMode.swift in Sources */,
 				194C9FA51EA7D71E007603B8 /* Crystallize.swift in Sources */,
 				194C9F5F1EA7D71E007603B8 /* ColorControls.swift in Sources */,
+				19A5F74B2712E1B3007C3865 /* Type.swift in Sources */,
 				194C9F5D1EA7D71E007603B8 /* ZoomBlur.swift in Sources */,
 				194C9FAF1EA7D71E007603B8 /* SpotColor.swift in Sources */,
-				194C9EE71EA7D706007603B8 /* Type.swift in Sources */,
 				194C9F8B1EA7D71E007603B8 /* Code128BarcodeGenerator.swift in Sources */,
 				194C9F961EA7D71E007603B8 /* CircularScreen.swift in Sources */,
 				194C9F731EA7D71E007603B8 /* MaskToAlpha.swift in Sources */,
