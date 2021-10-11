@@ -104,6 +104,12 @@
 		194C9FB41EA7D71E007603B8 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9F561EA7D71E007603B8 /* Transition.swift */; };
 		194C9FBD1EA7D743007603B8 /* TiltShiftCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9FBB1EA7D743007603B8 /* TiltShiftCircle.swift */; };
 		194C9FBE1EA7D743007603B8 /* TiltShiftLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */; };
+		1992AB682714770500C4953F /* LanczosScaleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB672714770500C4953F /* LanczosScaleTransform.swift */; };
+		1992AB6A27147EB700C4953F /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB6927147EB700C4953F /* Cast.swift */; };
+		1992AB6C27147F1900C4953F /* AffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB6B27147F1900C4953F /* AffineTransform.swift */; };
+		1992AB6E27147F9400C4953F /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB6D27147F9400C4953F /* Crop.swift */; };
+		1992AB702714841900C4953F /* SampleNearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB6F2714841900C4953F /* SampleNearest.swift */; };
+		1992AB72271488A500C4953F /* BicubicScaleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992AB71271488A500C4953F /* BicubicScaleTransform.swift */; };
 		19A5F74B2712E1B3007C3865 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6D92712E1B3007C3865 /* Type.swift */; };
 		19A5F74C2712E1B3007C3865 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F6DA2712E1B3007C3865 /* Cube.swift */; };
 		19A5F7AF2712EC04007C3865 /* AttributedTextImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5F7AE2712EC04007C3865 /* AttributedTextImageGenerator.swift */; };
@@ -214,6 +220,12 @@
 		194C9F561EA7D71E007603B8 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		194C9FBB1EA7D743007603B8 /* TiltShiftCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftCircle.swift; sourceTree = "<group>"; };
 		194C9FBC1EA7D743007603B8 /* TiltShiftLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltShiftLine.swift; sourceTree = "<group>"; };
+		1992AB672714770500C4953F /* LanczosScaleTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanczosScaleTransform.swift; sourceTree = "<group>"; };
+		1992AB6927147EB700C4953F /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		1992AB6B27147F1900C4953F /* AffineTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffineTransform.swift; sourceTree = "<group>"; };
+		1992AB6D27147F9400C4953F /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		1992AB6F2714841900C4953F /* SampleNearest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNearest.swift; sourceTree = "<group>"; };
+		1992AB71271488A500C4953F /* BicubicScaleTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicubicScaleTransform.swift; sourceTree = "<group>"; };
 		19A5F6D92712E1B3007C3865 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		19A5F6DA2712E1B3007C3865 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		19A5F7AD2712E3D4007C3865 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -406,6 +418,10 @@
 			isa = PBXGroup;
 			children = (
 				194C9F2C1EA7D71E007603B8 /* GeometryAdjustment.swift */,
+				1992AB6B27147F1900C4953F /* AffineTransform.swift */,
+				1992AB71271488A500C4953F /* BicubicScaleTransform.swift */,
+				1992AB6D27147F9400C4953F /* Crop.swift */,
+				1992AB672714770500C4953F /* LanczosScaleTransform.swift */,
 			);
 			path = GeometryAdjustment;
 			sourceTree = "<group>";
@@ -470,6 +486,7 @@
 				194C9F4C1EA7D71E007603B8 /* LineOverlay.swift */,
 				194C9F4D1EA7D71E007603B8 /* Pixellate.swift */,
 				194C9F4E1EA7D71E007603B8 /* Pointillize.swift */,
+				1992AB6F2714841900C4953F /* SampleNearest.swift */,
 				194C9F4F1EA7D71E007603B8 /* SpotColor.swift */,
 				194C9F501EA7D71E007603B8 /* SpotLight.swift */,
 				194C9F511EA7D71E007603B8 /* Stylize.swift */,
@@ -506,6 +523,7 @@
 		19A5F6D82712E1B3007C3865 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1992AB6927147EB700C4953F /* Cast.swift */,
 				19A5F6D92712E1B3007C3865 /* Type.swift */,
 				19A5F6DA2712E1B3007C3865 /* Cube.swift */,
 				194C9EEA1EA7D71E007603B8 /* BuiltIn */,
@@ -623,11 +641,13 @@
 				194C9F9F1EA7D71E007603B8 /* Bloom.swift in Sources */,
 				194C9F691EA7D71E007603B8 /* Vibrance.swift in Sources */,
 				194C9F8A1EA7D71E007603B8 /* CheckerboardGenerator.swift in Sources */,
+				1992AB6E27147F9400C4953F /* Crop.swift in Sources */,
 				194C9FA91EA7D71E007603B8 /* Gloom.swift in Sources */,
 				194C9F771EA7D71E007603B8 /* SepiaTone.swift in Sources */,
 				194C9F661EA7D71E007603B8 /* SRGBToneCurveToLinear.swift in Sources */,
 				194C9F821EA7D71E007603B8 /* BumpDistortion.swift in Sources */,
 				194C9F751EA7D71E007603B8 /* MinimumComponent.swift in Sources */,
+				1992AB682714770500C4953F /* LanczosScaleTransform.swift in Sources */,
 				194C9F7E1EA7D71E007603B8 /* OverlayBlendMode.swift in Sources */,
 				194C9F5A1EA7D71E007603B8 /* MedianFilter.swift in Sources */,
 				194C9F8C1EA7D71E007603B8 /* ConstantColorGenerator.swift in Sources */,
@@ -635,9 +655,11 @@
 				194C9F681EA7D71E007603B8 /* ToneCurve.swift in Sources */,
 				194C9FAD1EA7D71E007603B8 /* Pixellate.swift in Sources */,
 				194C9FBE1EA7D743007603B8 /* TiltShiftLine.swift in Sources */,
+				1992AB6C27147F1900C4953F /* AffineTransform.swift in Sources */,
 				194C9F921EA7D71E007603B8 /* GaussianGradient.swift in Sources */,
 				194C9F931EA7D71E007603B8 /* LinearGradient.swift in Sources */,
 				194C9F5C1EA7D71E007603B8 /* NoiseReduction.swift in Sources */,
+				1992AB72271488A500C4953F /* BicubicScaleTransform.swift in Sources */,
 				194C9FB01EA7D71E007603B8 /* SpotLight.swift in Sources */,
 				194C9F6C1EA7D71E007603B8 /* ColorCube.swift in Sources */,
 				194C9F591EA7D71E007603B8 /* GaussianBlur.swift in Sources */,
@@ -647,6 +669,7 @@
 				194C9FB21EA7D71E007603B8 /* AffineClamp.swift in Sources */,
 				194C9F9A1EA7D71E007603B8 /* LineScreen.swift in Sources */,
 				194C9F781EA7D71E007603B8 /* Vignette.swift in Sources */,
+				1992AB6A27147EB700C4953F /* Cast.swift in Sources */,
 				194C9F7A1EA7D71E007603B8 /* AdditionCompositing.swift in Sources */,
 				194C9F971EA7D71E007603B8 /* CMYKHalftone.swift in Sources */,
 				19A5F74C2712E1B3007C3865 /* Cube.swift in Sources */,
@@ -668,6 +691,7 @@
 				194C9F641EA7D71E007603B8 /* HueAdjust.swift in Sources */,
 				194C9FA81EA7D71E007603B8 /* EdgeWork.swift in Sources */,
 				194C9F881EA7D71E007603B8 /* TwirlDistortion.swift in Sources */,
+				1992AB702714841900C4953F /* SampleNearest.swift in Sources */,
 				194C9F9D1EA7D71E007603B8 /* UnsharpMask.swift in Sources */,
 				194C9FB41EA7D71E007603B8 /* Transition.swift in Sources */,
 				194C9F981EA7D71E007603B8 /* DotScreen.swift in Sources */,

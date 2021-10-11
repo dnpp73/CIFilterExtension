@@ -1,7 +1,4 @@
 /*
- CIAffineTransform
- CICrop
- CILanczosScaleTransform
  CIPerspectiveCorrection
  CIPerspectiveTransform
  CIPerspectiveTransformWithExtent
