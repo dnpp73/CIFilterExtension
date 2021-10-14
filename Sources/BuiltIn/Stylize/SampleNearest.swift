@@ -10,6 +10,7 @@ public struct SampleNearest {
 
 }
 
+@available(iOS 12, OSX 10.14, *)
 extension CIImage {
     public func transformedWithNearest(by transform: CGAffineTransform) -> CIImage {
         castOrFatalError(SampleNearest.filter(transformed(by: transform)))

@@ -30,6 +30,7 @@ public struct BicubicScaleTransform {
 
 }
 
+@available(iOS 11, OSX 10.13, *)
 extension CIImage {
     public func resizedWithBicubic(scale: CGFloat, aspectRatio: CGFloat? = BicubicScaleTransform.defaultInputAspectRatio, inputB: CGFloat = BicubicScaleTransform.defaultInputB, inputC: CGFloat = BicubicScaleTransform.defaultInputC) -> CIImage {
         castOrFatalError(BicubicScaleTransform.filter(inputAspectRatio: aspectRatio, inputB: inputB, inputC: inputC, inputScale: scale)(self))

@@ -24,6 +24,7 @@ public struct LanczosScaleTransform {
 
 }
 
+@available(iOS 6, OSX 10.4, *)
 extension CIImage {
     public func resizedWithLanczos(scale: CGFloat, aspectRatio: CGFloat? = LanczosScaleTransform.defaultInputAspectRatio) -> CIImage {
         castOrFatalError(LanczosScaleTransform.filter(inputAspectRatio: aspectRatio, inputScale: scale)(self))
